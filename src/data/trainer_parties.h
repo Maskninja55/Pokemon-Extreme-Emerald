@@ -3206,11 +3206,13 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ev - TRAINER_PARTY_EVS(252, 252, 4, 0, 0, 0),
+    .lvl = 16,
+    .species = SPECIES_KLAWF,
+    .ability = ABILITY_REGENERATOR
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_KNOCK_OFF, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE, MOVE_CRABHAMMER}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -3221,10 +3223,14 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 15,
+    .lvl = 16,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    }
+    {
+
+
     }
 };
 
@@ -3232,7 +3238,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 16,
-    .species = SPECIES_MACHOP,
+    .species = SPECIES_,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
     },
@@ -11804,3 +11810,42 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMon sParty_WallyPetalburg[] = {
+    {
+        .iv = {31, 0, 31, 31, 31, 31},
+        .ev = {252, 0, 124, 132, 0, 0 },
+        .lvl = 50,
+        .species = SPECIES_INDEEDEE_FEMALE,
+        .ability = ABILITY_POWER_SPOT,
+        .heldItem = ITEM_PSYCHIC_SEED,
+        .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_FOLLOW_ME, MOVE_HEAL_PULSE},
+    },
+        {
+        .iv = {31, 0, 31, 31, 31, 31},
+        .ev = {0, 0, 0, 252, 4, 252 },
+        .lvl = 50,
+        .species = SPECIES_GARDEVOIR,
+        .ability = ABILITY_PSYCHIC_SURGE,
+        .heldItem = ITEM_GARDEVOIRITE,
+        .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_ICE_BEAM},
+    },
+        {
+        .iv = {31, 0, 31, 31, 31, 31},
+        .ev = {, 0, 0, 0, 0, 0 },
+        .lvl = 50,
+        .species = SPECIES_INDEEDEE_FEMALE,
+        .ability = ABILITY_PSYCHIC_SURGE,
+        .heldItem = ITEM_PSYCHIC_SEED,
+        .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_FOLLOW_ME, MOVE_HEAL_PULSE},
+    },       
+     {
+        .iv = {31, 0, 31, 31, 31, 31},
+        .ev = {0, 0, 0, 0, 0, 0 },
+        .lvl = 50,
+        .species = SPECIES_INDEEDEE_FEMALE,
+        .ability = ABILITY_PSYCHIC_SURGE,
+        .heldItem = ITEM_PSYCHIC_SEED,
+        .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_FOLLOW_ME, MOVE_HEAL_PULSE},
+    },
+}

@@ -297,6 +297,11 @@ static const u8 sEmbodyAspectWellspringDescription[] = _("Raises Sp. Def.");
 static const u8 sEmbodyAspectCornerstoneDescription[] = _("Raises Defense.");
 static const u8 sToxicChainDescription[] = _("Moves can poison.");
 static const u8 sSupersweetSyrupDescription[] = _("Lowers the foe's Speed.");
+static const u8 sSuperiorReptileDescription[] = _("Changes type to your last move and boosts it .");
+static const u8 sImperfectMagicDescription[] = _("Trades accuracy for power");
+static const u8 sDraconicDescription[] = _("Turns Normal Type moves into Dragon");
+static const u8 sSecretMagicDescription[] = _("Doubles Sp.Attack");
+static const u8 sEndlessWrathDescription[] = _("Ups Attack but locks you in a move")
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -608,6 +613,11 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] = _("Embody Aspect"),
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("Supersweet Syrup"),
+    [ABILITY_SUPERIOR_REPTILE] =_("Superior Reptile"),
+    [ABILITY_IMPERFECT_MAGIC] = _("Imperfect Magic"),
+    [ABILITY_DRACONIC] = _("Draconic"),
+    [ABILITY_SECRET_MAGIC] = _("Secret Magic"),
+    [ABILITY_ENDLESS_WRATH] = _("Endless Wrath")
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -919,6 +929,12 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] = _("EmbodyAspect"),
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("SuprswtSyrup"),
+    [ABILITY_SUPERIOR_REPTILE] =_("SuperReptle"),
+    [ABILITY_IMPERFECT_MAGIC] = _("ImperfMagic"),
+    [ABILITY_DRACONIC] = _("Draconic"),
+    [ABILITY_SECRET_MAGIC] = _("Secret Magic"),
+    [ABILITY_ENDLESS_WRATH] = _("EndlessWrath").
+
 };
 #endif
 
@@ -1231,4 +1247,9 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] = sEmbodyAspectCornerstoneDescription,
     [ABILITY_TOXIC_CHAIN] = sToxicChainDescription,
     [ABILITY_SUPERSWEET_SYRUP] = sSupersweetSyrupDescription,
-};
+    [ABILITY_SUPERIOR_REPTILE] =sSuperiorReptileDescription,
+    [ABILITY_IMPERFECT_MAGIC] = sImperfectMagicDescription,
+    [ABILITY_DRACONIC] = sDraconicDescription,
+    [ABILITY_SECRET_MAGIC] = sSecretMagicDescription,
+    [ABILITY_ENDLESS_WRATH] = sEndlessWrathDescription,
+    };
