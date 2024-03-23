@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE112",
       "offset": -40,
       "direction": "right"
+    },
+    {
+      "map": "MAP_LAVARIDGE_RIDGE_ROUTE",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [
